@@ -1,0 +1,657 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:  Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+
+.header{
+    width: 100%;
+    background-image: url(images/background.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.background-home{
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(images/background.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.content{
+    width: 100%;
+    background-color: black;
+    text-align: center;
+    overflow: hidden;
+}
+
+nav{
+    display: flex;
+    padding: 5% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img{
+    width: 200px;
+    height: 40px;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px 12px;
+    position: relative;
+}
+
+.nav-links ul li a{
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+    transition: .3s ease-in-out;
+}
+
+.nav-links ul li a:hover{
+    color: blue;
+}
+
+.footer{
+    background-image: url(images/background.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    padding: 20px 0;
+    background-color: black;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(60, 108, 110);
+    overflow-x: hidden;
+}
+
+.footer img{
+    width: 200px;
+    height: 40px;
+}
+
+.footer h4{
+    margin-bottom: 25px;
+    margin-top: 20px;
+}
+
+/*------------ HOME PAGE ------------*/
+
+.home-page{
+    height: auto;
+    position: absolute;
+    top:30%;
+    left: 50%;;
+    transform:translate(-50%,-50%);
+}
+
+.home-page img{
+    width: 403px;
+    height: 80px;
+}
+
+.button .worksButton{
+    display: grid;
+    place-items: center;
+    border-radius: 10px;
+    height: 80px;
+    width: 400px;
+    background: white;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0%;
+    bottom: 10%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: large;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.5s ease-in-out;
+}
+
+.buttons .subscribeButton{
+    position: absolute;
+    place-items: center;
+    top: 55%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: large;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.5s ease-in-out;
+}
+
+.buttons .subscribeButton{
+    position: absolute;
+    place-items: center;
+    top: 55%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: large;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.5s ease-in-out;
+}
+
+.buttons .aboutButton{
+    position: absolute;
+    place-items: center;
+    top: 95%;
+    left: 45%;
+    transform:translate(-50%,-50%);
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: large;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.5s ease-in-out;
+}
+
+.buttons .contactButton{
+    position: absolute;
+    place-items: center;
+    top: 95%;
+    left: 55%;
+    transform:translate(-50%,-50%);
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: large;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.5s ease-in-out;
+}
+
+.buttons a:hover{
+    color: blue;
+}
+
+.button .worksButton:hover{
+    background: blue;
+}
+
+/* ------------WORKS PAGE------------ */
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-auto-rows: 100px 300px;
+    grid-gap: 10px;
+    grid-auto-flow: dense;
+    padding: 20px;
+}
+
+.galleryItems{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.galleryItems .image{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.galleryItems .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+
+.galleryItems:hover .image img{
+    transform: scale(1.5);
+}
+
+.galleryItems .text{
+    opacity: 0;
+}
+
+/* Height and Width For Images */
+.width-1{
+    grid-column: span 1;
+}
+.width-2{
+    grid-column: span 2;
+}
+.width-3{
+    grid-column: span 3;
+}
+.width-4{
+    grid-column: span 4;
+}
+.width-5{
+    grid-column: span 5;
+}
+.width-6{
+    grid-column: span 6;
+}
+
+.height-1{
+    grid-row: span 1;
+}
+.height-2{
+    grid-row: span 2;
+}
+.height-3{
+    grid-row: span 3;
+}
+.height-4{
+    grid-row: span 4;
+}
+.height-5{
+    grid-row: span 5;
+}
+.height-6{
+    grid-row: span 6;
+}
+
+
+/*------------ About Us Page ------------*/
+
+.content-about{
+    width: 100%;
+    background-color: black;
+    overflow: hidden;
+}
+
+.container-about{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-auto-rows: 100px 300px;
+    grid-gap: 10px;
+    grid-auto-flow: dense;
+    padding: 20px;
+    text-align: center;
+}
+
+.content-about img{
+    width: 300px;
+    height: 216px;
+    float: left;
+    padding: 20px;
+}
+
+.content-about h1{
+    color: blue;
+    font-size: x-large;
+    margin-top: 25px;
+    margin-bottom: 20px;
+    font-weight : 600px;
+    text-align: center;
+}
+
+.content-about .text{
+    text-align: justify;
+    color: white;
+    margin: 30px 0;
+    padding: 20px;
+    font-size: 30px;
+    line-height: 40px;
+}
+
+.galleryItems-about{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.galleryItems-about .image{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.galleryItems-about .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+
+.galleryItems-about:hover .image img{
+    transform: scale(1.5);
+}
+
+.galleryItems-about .text{
+    opacity: 0;
+}
+
+
+/* ------------CONTACT PAGE------------ */
+
+.content-contact{
+    width: 100%;
+    background-color: black;
+    overflow: hidden;
+}
+
+.content-contact img{
+    width: 300px;
+    height: 216px;
+    float: left;
+    padding: 20px;
+}
+
+.content-contact h1{
+    color: blue;
+    font-size: x-large;
+    margin-top: 25px;
+    margin-bottom: 20px;
+    font-weight : 600px;
+    text-align: center;
+}
+
+.content-contact .text{
+    text-align: center;
+    color: white;
+    margin: 30px 0;
+    padding: 20px;
+    font-size: 30px;
+    line-height: 40px;
+}
+
+.container-contact{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-auto-rows: 100px 300px;
+    grid-gap: 10px;
+    grid-auto-flow: dense;
+    padding: 20px;
+    text-align: center;
+}
+
+.galleryItems-contact{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.galleryItems-contact .image{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.galleryItems-contact .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+
+.galleryItems-contact:hover .image img{
+    transform: scale(1.5);
+}
+
+.galleryItems-contact .text{
+    opacity: 0;
+}
+
+/* ------------SUBSCRIBE PAGE------------ */
+
+.content-form{
+    background-color: black;
+	font-family: Arial, Helvetica, sans-serif;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	margin: 0;
+}
+
+.container-form{
+    background-color: black;
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    width: 400px;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.form{
+    padding: 30px 40px;
+}
+
+.formInput{
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.formInput label{
+    display: inline-block;
+    margin-bottom: 5px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+}
+
+.formInput input{
+    outline: 0;
+    border: 2px solid black;
+    border-radius: 4px;
+    background-color: #272727;
+    display: block;
+    font-size: 14px;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+
+.formInput input:focus{
+    outline: 0;
+    border-color: white;
+}
+
+.formInput.success input{
+    border-color: blue;
+}
+
+.formInput.error input{
+    border-color: red;
+}
+
+.form button{
+    width: 115%;
+    padding: 15px;
+    margin-top: 30px;
+    border-radius: 5px;
+    border: white;
+    display: block;
+    transition: 0.5s ease-in-out;
+    text-align: center;
+}
+
+.form button a{
+    text-decoration: none;
+    color: black;
+}
+
+.form button:hover{
+    background-color: blue;
+}
+
+.form select{
+    padding: 20px;
+    border-radius: 3px;
+    width: 115%;
+    background-color: #272727;
+    outline: 0;
+    border: #272727;
+    color: white;
+    display: block;
+}
+
+.formInput small{
+    color: red;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+}
+
+.formInput.error small{
+    visibility: visible;
+}
+
+.formInput.error [name = "country"]{
+    border-color: red;
+}
+
+input[type ="checkbox"]{
+    appearance: none;
+    -webkit-appearance: none;
+    height: 5px;
+    width: 5px;
+    background-color: #272727;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.formInput input[type = "checkbox"]{
+    display: flex;
+    height: 20px;
+    width: 5px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.formInput [type = "checkbox"] + label{
+    position: relative;
+    padding-top: 15px;
+    padding-left: 60px;
+}
+
+
+.formInput input[type = "checkbox"]::after{
+    font-size: 20px;
+    font-family: "Font Awesome 5 Free";
+    content: "\f00c";
+    display: none;
+}
+
+.formInput.error input[type = "checkbox"]{
+    border-color: red;
+}
+
+.formInput input[type = "checkbox"]:checked{
+    background-color: green;
+}
+
+.formInput input[type = "checkbox"]:checked::after{
+    display: block;
+}
+
+/* ------------SUBSCRIBE SUCCESS PAGE------------ */
+
+.content-subscribe{
+    width: 100%;
+    background-color: black;
+    min-height: 100vh;
+}
+
+.successful img{
+    width: 30%;
+    display: block;
+    margin: 0 auto;
+    padding-top: 5%;
+}
+
+.successful .text{
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: oblique;
+    font-weight: lighter;
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    margin-top: 40px;
+    
+}
+
+.button-subscribe .worksButton{
+    display: block;
+    position: absolute;
+    place-items: center;
+    border-radius: 10px;
+    text-align: center;
+    text-justify: center;
+    width: 400px;
+    background: white;
+    margin: 0 auto;
+    padding: 30px;
+    margin-top: 2%;
+    left: 0%; 
+    right: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: large;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.5s ease-in-out;
+}
+
+.button-subscribe .worksButton:hover{
+    background: blue;
+}
+
+@media(max-width : 800px){
+    .nav-links ul li{
+        font-size: small;
+        padding: 10px 0;
+    }
+
+    .content-about .text{
+        font-size: small;
+        margin: 5px 0;
+    }
+
+    .content-contact .text{
+        font-size: small;
+    }
+
+    .galleryItems-about .image img{
+        object-position: 52% 50%;
+    }
+
+    .galleryItems-contact .image img{
+        object-position: 52% 50%;
+    }
+
+
+    .buttons .aboutButton{
+        left: 35%;
+    }
+
+    .buttons .contactButton{
+        left: 65%;
+    }
+}

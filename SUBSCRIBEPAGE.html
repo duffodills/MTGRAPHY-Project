@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MTGRAPHY</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <script src="https://kit.fontawesome.com/db547dd068.js" crossorigin="anonymous"></script>
+</head>
+<body>
+        <section class="header">
+            <nav>
+                <a href="HOMEPAGE.html"><img src="images/Group 1 (1).svg"></a>
+                <div class="nav-links">
+                    <ul>
+                        <li><a href="HOMEPAGE.html">HOME</a></li>
+                        <li><a href="WORKSPAGE.html">WORKS</a></li>
+                        <li><a href="ABOUTPAGE.html">ABOUT</a></li>
+                        <li><a href="CONTACTPAGE.html">CONTACT</a></li>
+                        <li><a href="SUBSCRIBEPAGE.html">SUBSCRIBE</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </section>  
+
+        <section class="content-subscribe">
+
+            <div class="content-form">
+                <div class="container-form">
+                    <form id="form" class="form" action="SUBSCRIBESUCCESSPAGE.html" method="get">
+                        
+                        <div class="formInput">
+                            <label for="name">Name : </label>
+                            <input type="text" placeholder="John Doe" id="username"/>
+                            <small>Error Message</small>
+                        </div>
+
+                        <div class="formInput">
+                            <label for="name">Email : </label>
+                            <input type="text" placeholder="JohnDoe@xxxx.com" id="email"/>
+                            <small>Error Message</small>
+                        </div>
+
+                        <div class="formInput">
+                            <label for="name">Phone Number : </label>
+                            <input type="text" placeholder="xxxxxxxxxx" id="phone"/>
+                            <small>Error Message</small>
+                        </div>
+
+                        <div class="formInput">
+                            <label for="name">Country : </label>
+                            <select name="Country" id="country">
+                                <option value="select">Select Country</option>
+                                <option value="Indonesia">Indonesia</option>
+                                <option value="Malaysia">Malaysia</option>
+                                <option value="Singapore">Singapore</option>
+                            </select>
+                            <small>Error Message</small>
+                        </div>
+
+                        <div class="formInput">
+                            <input type="checkbox" id="check" onclick="isChecked()">
+                            <label for="check">Agree To Terms & Conditions.</label>
+                            <small>Error Message</small>
+                        </div>
+
+                        <button type="submit">Submit</button>
+                    </form>
+                </div> 
+            </div>
+        </section>
+        
+        <section class="footer">    
+            <h4><img src="images/Group 1 (4).png" alt=""></h4>
+            <p>MTGRAPHY 2022 Limited.</p>
+        </section>
+        <script src="Validation.js"></script>
+</body>
